@@ -38,14 +38,14 @@ header nav ul li {
 
 /*efecto cuando el usuario pasa el curso por el boton*/
 .barra-Navegacion li a:hover {
-    background-color: orange;
+    background-color: #85c1e9;
 }
 
 /*efecto cuando el usuario presiona sin soltar el boton*/
 .barra-Navegacion li a:active {
-    box-shadow: 0px 0px 10px 4px #000;
+    background-color: #f1c40f;
+    box-shadow: 0px 0px 3px 1px #000;
 }
-
 
 
 .main .caja-operaciones .caja-ingresar-Datos {
@@ -65,22 +65,31 @@ header nav ul li {
     padding: 5px;
 }
 
+/*estilo del boton "agregar"*/
 .caja-ingresar-Datos input[type="button"]{
     font-family: 'Schoolbell', cursive;
     padding: 5px;
                 /*medida medida enfioque tamaño  color*/
-    box-shadow: 3px 3px 0px 1px #000;
     border: 1px solid #000; /*Quitar el border del boton (quitar estilo predeterminado)*/
+    box-shadow: 3px 3px 0px 1px #000; /*sombra solida al boton "agregar"*/
 }
 
+/*efecto "hover" cuando el usuario pasa por el boton*/
 .caja-ingresar-Datos input[type="button"]:hover{
-    background-color: orange;
+    background-color: #65afc0;
     cursor: pointer;
+    box-shadow: 3px 3px 0px 1px #aed6f1;
 }
+
+/*efecto "active" cuando el usuario presiona el boton*/
+.caja-ingresar-Datos input[type="button"]:active{
+    /*arriba abajo enfoque radio color*/
+    box-shadow: 4px 4px 0px 1px #f1c40f;
+}
+
 
 
 .main .caja-operaciones .caja-Resultados {
-
     width: 100%;
     height: 360px;
     /* background-color: rgb(21, 88, 212); */
@@ -88,7 +97,7 @@ header nav ul li {
 
 .main .caja-operaciones .caja-Binarios {
     width: 20%;
-	height: 90%; /*tomo el espaciado que se me otorga en el contenedor*/
+	height: 95%; /*tomo el espaciado que se me otorga en el contenedor*/
     margin: 15px 0px 0px 100px;
     overflow: hidden; /* El contenido es recortado y no se muestran barras de posición. */
     float: left; /*lo muevo a la izquierda*/
@@ -98,7 +107,7 @@ header nav ul li {
 
 .main .caja-operaciones .caja-Decimales {
     width: 20%;
-    height: 90%;
+    height: 95%; /*tomo el espaciado que se me otorga en el contenedor*/
     margin: 15px 100px 0px 0px;
     overflow: hidden;
     float: right; /*lo muevo a la derecha*/
@@ -125,23 +134,48 @@ textarea {
     margin-bottom: 10px;
 }
 
+/*total del alto de la caja*/
+.caja-BinariosHijo {
+    height: 100%;
+}
+
+/*total del alto de la caja*/
+.caja-DecimalesHijo {
+    height: 100%;
+}
+
 
 /*ESTILOS BOTONES DE LA CAJA "BINARIO" Y "DECIMALES"*/
+/*estilo boton "convertir"*/
 .caja-BinariosHijo input[type="button"]{
     font-family: 'Schoolbell', cursive;
-    padding: 3px;
+    padding: 5px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 0px 1px #000;
 }
 
-.caja-BinariosHijo input[type="button"]:hover{
-    background-color: orange;
+/*estilo "hover"" cuando el usuario pasa el cursor por el boton*/
+.caja-BinariosHijo input[type="button"]:hover {
+    background-color: #65afc0;
     cursor: pointer;
+    box-shadow: 3px 3px 0px 1px #aed6f1;
 }
 
+/*estilo "active" cuando el usuario presiona el boton*/
+.caja-BinariosHijo input[type="button"]:active{
+    box-shadow: 3px 3px 0px 2px #f1c40f;
+}
+
+
+/*estilo boton "decimal"*/
 .caja-DecimalesHijo input[type="button"]{
     font-family: 'Schoolbell', cursive;
-    padding: 3px;
+    padding: 5px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 0px 1px #000;
 }
 
+/**/
 
 footer {
     width: 100%;
