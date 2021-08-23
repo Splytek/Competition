@@ -12,7 +12,7 @@
     <header>
       <nav>
         <ul class="barra-Navegacion">
-          <li><a href="#">Binario a decimal</a></li>
+          <li><a href="1_BinarioDecimal.html">Binario a decimal</a></li>
           <li><a href="#">Areas y Perimetros</a></li>
           <li><a href="#">Palindromo</a></li>
           <li><a href="#">Libre</a></li>
@@ -22,16 +22,28 @@
 
 
     <section class="main">
-      <section class="caja-operaciones">
+      <section class="caja-seleccionar-Figura">
         
         
-        <div class="seleccionar-Datos">
-          <p class="Titulo-1">Area sy Perimetros</p>
+        <div class="seleccionar-Calcular-Figura">
+          <p class="Titulo-1">Areas y Perimetros</p>
           <form method="POST">
             <label for="numero-Binario" class="Subtitle-1">Selecciona que deseas calcular </label>
-            <input type="text" id="numero-Binario">
+            <select name="combo">
+              <option value="Area" selected>Area</option>
+              <option value="Perimetro">Perimetro</option>
+            </select>
           </form>
         </div>
+
+        <div class="seleccionar-Costrar-Figura">
+          <p class="Titulo-2">Selecciona la figura</p>
+          <form>
+            <select></select>
+          </form>
+        </div>
+
+      </section>
 
 
         <div class="caja-Resultados">
@@ -55,8 +67,6 @@
           </div>
         </div>
 
-
-      </section>
     </section>
 
     <footer>

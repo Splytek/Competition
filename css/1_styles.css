@@ -31,9 +31,9 @@ header nav ul li {
     color: black; /*al poner el color quitamos por defecto el eefcto de marcado en azul de link*/
     font-family: 'Schoolbell', cursive;
     text-decoration: none; /*quitamos los estilos con "none"*/
-    padding: 15px 15px; /*Contorno de adentro de la caja 15x15 de los cuatro lados*/
+    padding: 14px 15px; /*Contorno de adentro de la caja 15x15 de los cuatro lados*/
     height: 20px;
-    display: block;
+    display: block; /*Se convierte en un elemento "block" y empieza en una nueva linea y toma todo el ancho*/
 }
 
 /*efecto cuando el usuario pasa el curso por el boton*/
@@ -167,6 +167,7 @@ textarea {
 }
 
 
+
 /*estilo boton "decimal"*/
 .caja-DecimalesHijo input[type="button"]{
     font-family: 'Schoolbell', cursive;
@@ -175,7 +176,18 @@ textarea {
     box-shadow: 3px 3px 0px 1px #000;
 }
 
-/**/
+/*estilo "hover" para el boton "decimal"*/
+.caja-DecimalesHijo input[type="button"]:hover{
+    background-color: #65afc0;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px 1px #aed6f1;
+}
+
+.caja-DecimalesHijo input[type="button"]:active{
+    box-shadow: 3px 3px 0px 2px #f1c40f;
+}
+
+
 
 footer {
     width: 100%;
