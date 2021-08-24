@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="css/2_stylesPageThree.css">
     <title>Concurso</title>
     <script src="js/app.js"></script>
   </head>
@@ -20,52 +20,62 @@
       </nav>
     </header>
 
-
+    <!-- section sirve como si fuera un seccion de un libro por partes -->
     <section class="main">
-      <section class="caja-seleccionar-Figura">
+      
+      <section class="caja-Calcular-Figura">  
         
-        
-        <div class="seleccionar-Calcular-Figura">
-          <p class="Titulo-1">Areas y Perimetros</p>
+        <!-- Titulo de la pagina -->
+        <h2 class="Titulo-1">Area y Perimetros</h2>
+
+        <div class="caja-Formula-Figura">
           <form method="POST">
-            <label for="numero-Binario" class="Subtitle-1">Selecciona que deseas calcular </label>
-            <select name="combo">
+            <label for="tipoFormula">Selecciona que deseas calcular </label>
+            <select name="tipoFormula">
               <option value="Area" selected>Area</option>
               <option value="Perimetro">Perimetro</option>
             </select>
           </form>
         </div>
 
-        <div class="seleccionar-Costrar-Figura">
-          <p class="Titulo-2">Selecciona la figura</p>
-          <form>
-            <select></select>
-          </form>
+        <img class="miFiguraIntercambiable" id="miImagenFigura" src="imgs/Triangle.png">
+
+        <div class="caja-Seleccionar-Figura">
+          <form method="POST">
+            <label for="tipoFigura">Selecciona la figura</label>
+            <select name="tipoFigura">
+              <option value="Cuadrado">Cuadrado</option>
+              <option value="Triangulo">Triangulo</option>
+              <option value="Rectagulo">Rectangulo</option>
+              <option value="Circulo">Circulo</opction>
+              <option value="Rombo">Rombo</option>
+            </select>
+          </form> 
         </div>
 
       </section>
 
-
-        <div class="caja-Resultados">
-          <div class="caja-Binarios"> 
-            <div class="caja-BinariosHijo">
-              <h2>Binarios</h2>
-              <!-- disabled: permite bloquear el textarea y no se permita modificar -->
-              <!-- readonly: permite especificar que el area de texto es de solo lectura -->
-              <textarea placeholder="Numero binarios..." id="mostrarTexto-Binarios" readonly></textarea>
-              </textarea>
-              <input type="button" value="Convertir">
+      <section class="caja-mostrar-Datos">
+        <div class="caja-txt-Formula">
+          <div class="caja-Formula"> 
+            <div class="caja-FormulaHijo">
+              <p>Formula</p>
+              <p>Texto Formula</p>
             </div>
           </div>
 
-          <div class="caja-Decimales">
-            <div class="caja-DecimalesHijo">
-              <h2>Decimales</h2>
-              <textarea placeholder="Numeros Decimales..." readonly></textarea>
-              <input type="button" value="Crear JSON">
+          <div class="caja-Datos">
+            <div class="caja-DatosHijo">
+              <label for="Lado1">Lado 1</label>
+              <input type="text" id="Lado1">
+              <label for="Lado2">Lado 2</label>
+              <input type="Lado2" id="Lado2">
+              <label for="Resultado">Resultado</label>
+              <input type="text" id="Resultado">
             </div>        
           </div>
         </div>
+      </section>
 
     </section>
 
