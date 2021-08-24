@@ -1,4 +1,4 @@
-* {
+* { /*FORMATEAR*/
     margin: 0;
     padding: 0;
 }
@@ -55,17 +55,22 @@ header nav ul li {
     padding: 15px 0px 0px 0px;
 }
 
+/* contenedor (padre) */
 .caja-Seleccionar-Figura{
     padding: 50px 0px 0px 80px;
+    background-color: rgb(83, 185, 83);
 }
-
-
+/*--------------------------------------------*/
+.form-Figura {
+    background-color: blue;
+}
 
 .miFiguraIntercambiable {
-    float: right;
-    width: 95px;
-    padding-right: 900px;
+    background-color: yellow;
+    display: inline-block;
+    width: 75px;
 }
+/*----------------------------*/
 
 
 /*SubCaja 2*/

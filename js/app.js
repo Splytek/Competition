@@ -2,14 +2,24 @@ function mostrarDatos(){
 
     //var numeroBinarioTxt = document.getElementById("numero-Binario").value; //obtenemos el valor del input
 
-    var numeroBinarioTxt = document.getElementById('numero-Binario').value;
+    var numeroBinario = document.getElementById('numero-Binario').value;
 
-    var texto = numeroBinarioTxt;
+    //numero 
+    var numeroC = parseInt(numeroBinario); 
 
-    var Hola = texto += texto;
+    //CODIGO ASCII
+    if(numeroC> String.fromCharCode(48) && String.fromCharCode(57)<numeroC){
+      alert("estas entre los numeros 0 y 9");
+    } else {
+      alert("No entras");
+    }
 
-    document.getElementById("mostrarTexto-Binarios").innerHTML = Hola + '\n';
-    
+}
+
+
+
+
+
     
 /*     if(numeroBinarioText.length <= 15){
       var texto = numeroBinarioText;
@@ -24,5 +34,3 @@ function mostrarDatos(){
 
       }
     } */
-
-}
