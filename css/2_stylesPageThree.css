@@ -134,6 +134,10 @@ header nav ul li {
 
 
 
+
+
+
+
 /*SubCaja 3*/
 .caja-Datos {
     width: 89%;
@@ -145,10 +149,18 @@ header nav ul li {
     width: 60%; /*Alinear por medio del tamaño del limte dado para que haga efecto al alinear*/
 }
 
-.caja-Datos .Lado_1 {
-    text-align: right;
+.Lado_1 .Lado2 {
     background-color: rgb(194, 184, 47);
 }
+
+
+
+
+
+
+
+
+
 
 
 
