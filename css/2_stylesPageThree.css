@@ -89,6 +89,10 @@ header nav ul li {
 
 }
 
+select {
+    cursor: pointer;
+}
+
 /*Contenedor Figura*/
 .contenedor-Imagen-Figura {
     height: 100px;
@@ -132,12 +136,6 @@ header nav ul li {
 
 /*--------------------------------------------*/
 
-
-
-
-
-
-
 /*SubCaja 3*/
 .caja-Datos {
     width: 89%;
@@ -146,8 +144,8 @@ header nav ul li {
 }
 
 .caja-Datos .caja-DatosHijo {
-    width: 60%; /*Alinear por medio del tamaño del limte dado para que haga efecto al alinear*/
-    padding: 15px 0px 0px 85px;
+    width: 50%; /*Alinear por medio del tamaño del limte dado para que haga efecto al alinear*/
+    padding: 5px 0px 0px 85px;
 }
 
 .Lado_1{
@@ -159,30 +157,34 @@ header nav ul li {
 }
 
 .Lado_3 {
-    padding-bottom: 6%;
-}
-
-.caja-DatosHijo input[type="text"] {
-    border: 3px soild #000;
+    padding-bottom: 4%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-.caja-ingresar-Datos input[type="text"]{
-    border: solid #000 3px;
-    margin: 0px 10px 0px 20px;
+.caja-Datos input[type="text"] {
+    border: 3px solid #000;
+    margin-left: 15px;
     padding: 5px;
 }
+
+.caja-Datos input[type="text"]:hover {
+    border: 3px solid orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .caja-ingresar-Datos input[type="button"]{
     font-family: 'Schoolbell', cursive;
@@ -260,10 +262,10 @@ textarea {
 
 
 footer {
-    width: 100%;
+    /* width: 100%; */
     /* background-color: rgb(160, 90, 50); */
     /*float: left; /*toma todo el tamaño en otra nueva linea*/
-    clear: both;
+/*     clear: both; */
     text-align: center;
-    padding: 2px 0px 2px 0px;
+    /* padding: 2px 0px 2px 0px; */
 }

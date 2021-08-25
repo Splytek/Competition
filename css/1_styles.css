@@ -51,11 +51,11 @@ header nav ul li {
 .main .caja-operaciones .caja-ingresar-Datos {
 
     padding-left: 25px; /*enstension/alargar en espacio de la caja, peros siempre yendo pegado al marco*/
-    margin: 40px 0px 25px 0px; 
+    margin: 25px 0px 25px 0px; 
 }
 
-h2 Titulo-1 {
-    margin: 10px 0px 25px 0px;
+.Titulo-1 {
+    margin: 20px 0px 0px 25px;
     font-size: 30px;
 }
 
