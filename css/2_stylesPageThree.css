@@ -43,7 +43,7 @@ header nav ul li {
 .main .caja-Calcular-Figura {
     width: 100%;
     height: 100%;
-    padding-left: 25px;
+
     margin: 20px 0px 25px 0px;
 }
 
@@ -51,30 +51,89 @@ header nav ul li {
     font-size: 30px;
 }
 
-.caja-Formula-Figura {
-    padding: 15px 0px 0px 0px;
+/*seleccionando el input "select"*/
+.caja-Formula-Figura select {
+    margin-left: 15px;
+    border: 3px solid #000;
+    font-family: 'Schoolbell', cursive;
 }
 
-/* contenedor (padre) */
+.caja-Formula-Figura {
+    padding: 25px 0px 0px 0px;
+}
+
+/*--------------------------------------------*/
+/* Contenedor (Padre) */
 .caja-Seleccionar-Figura{
-    padding: 50px 0px 0px 80px;
-    background-color: rgb(83, 185, 83);
+    padding: 55px 0px 0px 80px;
+    height: 100%;
+}
+
+.caja-Seleccionar-Figura select {
+    margin-left: 15px;
+    border: 3px solid #000;
+    font-family: 'Schollbell', cursive;
+}
+
+/*contendor Formulario*/
+.form-Figura {
+    width: 45%;
+    display: inline-block; /*display: inline-block e sun mescla de "inline" y "block" se muestran en la misma línea 
+                             (respetando el flujo) todos los elementos y además, acepta las propiedades width, height y margenes verticales.*/
+
+}
+
+/*Contenedor Figura*/
+.contenedor-Imagen-Figura {
+    height: 100px;
+     /*lo pinemos para que se acomode en la fila con la mezcla de bloque e inline*/
+    padding-left: 270px;
+}
+
+/*Tamaño de la iamgen Figura*/
+.miFiguraIntercambiable {
+    width: 100px;
 }
 /*--------------------------------------------*/
-.form-Figura {
-    background-color: blue;
-}
-
-.miFiguraIntercambiable {
-    background-color: yellow;
-    display: inline-block;
-    width: 75px;
-}
-/*----------------------------*/
 
 
 /*SubCaja 2*/
+.caja-Mostrar-Datos {
+    width: 100%;
+    height: 100%;
+    
+}
 
+.caja-txt-Formula {
+    width: 100%;
+}
+
+.caja-Formula {
+    width: 100%;
+    
+}
+
+.txt-1, .txt-2 {
+    display: inline-block; /*Con "display:inline-block" - Lo agrupo en la misma linea que hace al elemento convertirse 
+                             en una mezcla de "block e inline"*/
+}
+
+.txt-2 {
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+/*SubCaja 3*/
+.caja-Datos {
+    width: 35%;
+    height: 100%;
+    padding: 35px 0px 0px 90px;
+}
+
+.caja-Datos .caja-DatosHijo {
+    display: inline-block;
+    width: 100px;
+}
 
 
 
