@@ -147,11 +147,25 @@ header nav ul li {
 
 .caja-Datos .caja-DatosHijo {
     width: 60%; /*Alinear por medio del tamaño del limte dado para que haga efecto al alinear*/
+    padding: 15px 0px 0px 85px;
 }
 
-.Lado_1 .Lado2 {
-    background-color: rgb(194, 184, 47);
+.Lado_1{
+    padding: 0px 0px 25px 27px;
 }
+
+.Lado_2 {
+    padding: 0px 0px 25px 24px;
+}
+
+.Lado_3 {
+    padding-bottom: 6%;
+}
+
+.caja-DatosHijo input[type="text"] {
+    border: 3px soild #000;
+}
+
 
 
 
