@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/3_stylesPageTwo.css">
+    <title>Concurso</title>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+
+
+    <header>
+      <nav>
+        <ul class="barra-Navegacion">
+          <li><a href="1_BinarioDecimal.html">Binario a decimal</a></li>
+          <li><a href="2_AreasyPerimetros.html">Areas y Perimetros</a></li>
+          <li><a href="#">Palindromo</a></li>
+          <li><a href="4_Libre.html">Libre</a></li>
+        </ul>          
+      </nav>
+    </header>
+
+
+    <section class="main">
+      <section class="caja-operaciones">
+        
+        <h2 class="Titulo-1">Palindromo</h2>
+        <div class="caja-ingresar-Datos">
+          <form method="POST">
+            <label for="numero-Binario" class="Subtitle-1">Ingresa una palabra o frase </label>
+            <input type="text" id="numero-Binario">
+            <input type="button" onclick="mostrarDatos()" value="Agregar">
+          </form>
+        </div>
+
+
+        <div class="caja-Resultados">
+          <div class="caja-Binarios"> 
+            <div class="caja-BinariosHijo">
+              <h2>Palabras o frases</h2>
+              <!-- disabled: permite bloquear el textarea y no se permita modificar -->
+              <!-- readonly: permite especificar que el area de texto es de solo lectura -->
+              <textarea rows="10" cols="50" id="mostrarTexto-Binarios" readonly></textarea>
+              <input type="button" value="Enviar">
+            </div>
+          </div>
+
+          <div class="caja-Decimales">
+            <div class="caja-DecimalesHijo">
+              <h2>Resultado</h2>
+              <textarea rows="10" readonly></textarea>
+              <input type="button" value="Crear JSON" hidden>
+            </div>        
+          </div>
+        </div>
+
+      </section>
+    </section>
+
+    <footer>
+      <p>Creado por GH1UGA</p>
+    </footer>
+    
+
+  </body>
+</html>

@@ -6,6 +6,6 @@ function mostrarDatos(){
 
     Texto += numeroBinarioObtenido + "\n";
 
-    document.getElementById("mostrarTexto-Binarios").innerHTML = Texto+=Texto + "\n";
+    document.getElementById("mostrarTexto-Binarios").innerHTML = Texto;
 
 }

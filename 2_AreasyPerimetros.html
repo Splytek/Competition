@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/2_stylesPageThree.css">
     <title>Concurso</title>
-    <script src="js/app.js"></script>
+    <script src="js/app_2.js"></script>
   </head>
   <body>
 
@@ -14,8 +14,8 @@
         <ul class="barra-Navegacion">
           <li><a href="1_BinarioDecimal.html">Binario a decimal</a></li>
           <li><a href="#">Areas y Perimetros</a></li>
-          <li><a href="#">Palindromo</a></li>
-          <li><a href="#">Libre</a></li>
+          <li><a href="3_Palindromo.html">Palindromo</a></li>
+          <li><a href="4_Libre.html">Libre</a></li>
         </ul>          
       </nav>
     </header>
@@ -23,7 +23,7 @@
     <!-- section sirve como si fuera un seccion de un libro por partes -->
     <section class="main">
       
-      <!-- CONTENEDEOR 1 -->
+      <!-- CONTENEDOR 1 -->
       <section class="caja-Calcular-Figura">  
         
         <!-- Titulo de la pagina -->
@@ -32,8 +32,9 @@
         <div class="caja-Formula-Figura">
           <form method="POST">
             <label for="tipoFormula">Selecciona que deseas calcular </label>
-            <select name="tipoFormula">
-              <option value="Area" selected>Area</option>
+            <select id="tipoFormula">
+              <option value="" selected>----------</option>
+              <option value="Area">Area</option>
               <option value="Perimetro">Perimetro</option>
             </select>
           </form>
@@ -41,11 +42,12 @@
 
         <div class="caja-Seleccionar-Figura">
 
-          <!-- CONTENDOR HIJO FORMULARIO -->
+          <!-- CONTENEDOR 2 -->
           <div class="form-Figura">
           <form method="POST">
             <label for="tipoFigura">Selecciona la figura</label>
-            <select name="tipoFigura">
+            <select id="tipoFigura" onchange="sFigura()">
+              <option value="" selected>----------</option>
               <option value="Cuadrado">Cuadrado</option>
               <option value="Triangulo">Triangulo</option>
               <option value="Rectagulo">Rectangulo</option>
