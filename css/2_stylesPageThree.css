@@ -95,9 +95,10 @@ select {
 
 /*Contenedor Figura*/
 .contenedor-Imagen-Figura {
-    height: 100px;
+    height: 100%;
+    width: 100%;
      /*lo pinemos para que se acomode en la fila con la mezcla de bloque e inline*/
-    padding-left: 270px;
+    padding-left: 280px;
 }
 
 /*Tamaño de la iamgen Figura*/

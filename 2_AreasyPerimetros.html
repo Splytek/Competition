@@ -25,14 +25,12 @@
       
       <!-- CONTENEDOR 1 -->
       <section class="caja-Calcular-Figura">  
-        
         <!-- Titulo de la pagina -->
         <h2 class="Titulo-1">Area y Perimetros</h2>
-
         <div class="caja-Formula-Figura">
           <form method="POST">
             <label for="tipoFormula">Selecciona que deseas calcular </label>
-            <select id="tipoFormula">
+            <select id="tipoFormula" onchange="mFigura()">
               <option value="" selected>----------</option>
               <option value="Area">Area</option>
               <option value="Perimetro">Perimetro</option>
@@ -40,13 +38,12 @@
           </form>
         </div>
 
+         <!-- CONTENEDOR 2 -->
         <div class="caja-Seleccionar-Figura">
-
-          <!-- CONTENEDOR 2 -->
           <div class="form-Figura">
           <form method="POST">
             <label for="tipoFigura">Selecciona la figura</label>
-            <select id="tipoFigura" onchange="sFigura()">
+            <select id="tipoFigura" onchange="mFigura()">
               <option value="" selected>----------</option>
               <option value="Cuadrado">Cuadrado</option>
               <option value="Triangulo">Triangulo</option>
@@ -59,14 +56,14 @@
           
           <!-- CONTENEDOR HIJO IMAGEN -->
           <div class="contenedor-Imagen-Figura">
-            <img class="miFiguraIntercambiable" id="miImagenFigura" src="imgs/Triangle.png">
+            <img class="miFiguraIntercambiable" id="miImagenFigura" src="imgs/Square.png">
           </div>
 
         </div>
 
       </section>
 
-      <!-- CONTENEDOR 2H -->
+      <!-- CONTENEDOR 2 -->
       <section class="caja-Mostrar-Datos">
 
         <div class="caja-resultado-Formula">
@@ -74,24 +71,28 @@
           <div class="caja-Formula"> 
             <div class="caja-FormulaHijo">
               <p class="txt-1">Formula</p>
-              <p class="txt-2">Area = Lado * Lado</p>
+              <p class="txt-2" id="mFormula"></p>
             </div>
           </div>
 
           <div class="caja-Datos">
             <div class="caja-DatosHijo">
+
               <div class="Lado_1">
                 <label for="Lado1">Lado 1</label>
                 <input type="text" id="Lado1">
               </div>
+
               <div class="Lado_2">
                 <label for="Lado2">Lado 2</label>
                 <input type="text" id="Lado2">
               </div>
+
               <div class="Lado_3">
                 <label for="Resultado">Resultado</label>
                 <input type="text" id="Resultado">
               </div>
+
             </div>        
           </div>
 
