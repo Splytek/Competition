@@ -12,7 +12,7 @@
         //alert("Elegiste area del cuadrado")
         document.getElementById("miImagenFigura").src = 'imgs/Square.png';
         document.getElementById(mFormula):
-
+        
       } else if(y == "Triangulo"){
         document.getElementById("miImagenFigura").src = 'imgs/Triangle.png';
       } else if(y == "Rectangulo"){
