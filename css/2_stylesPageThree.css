@@ -149,9 +149,32 @@ select {
     padding: 5px 0px 0px 85px;
 }
 
-.Lado_1{
-    padding: 0px 0px 25px 27px;
+.Lado_1 {
+    width: 400px;
+    display: inline-block;
 }
+
+#L1{
+    width: 100px;
+    text-align: left;
+    padding: 1px;
+    background-color: aquamarine;
+}
+
+.label-Lado1{
+    max-width: 80px;
+    padding: 0px 0px 25px 27px;
+    display: inline-block;
+}
+
+.input-Lado1{
+    width: 215px;
+    padding: 0px 0px 25px 0px;
+    display: inline-block;
+}
+
+
+
 
 .Lado_2 {
     padding: 0px 0px 25px 24px;

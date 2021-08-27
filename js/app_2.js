@@ -8,17 +8,12 @@
     if(x == "Area"){
  
       if(y == "Cuadrado"){
-<<<<<<< HEAD
-        //alert("Elegiste area del cuadrado")
-        document.getElementById("miImagenFigura").src = 'imgs/Square.png';
-        document.getElementById(mFormula):
-        
-=======
           document.getElementById("miImagenFigura").src = 'imgs/Square.png';
           document.getElementById("mFormula").innerHTML = 'Area = Lado * Lado';
       } else if(y == "Triangulo"){
           document.getElementById("miImagenFigura").src = 'imgs/Triangle.png';
           document.getElementById("mFormula").innerHTML = 'Area = Base * Altura / 2';
+          document.getElementById("L1").innerHTML = "Base";
       } else if(y == "Rectangulo"){
           document.getElementById("miImagenFigura").src = 'imgs/Rectangle.png';
           document.getElementById("mFormula").innerHTML = 'Area = Base * Altura"';
@@ -34,7 +29,6 @@
         
       if(y == "Cuadrado"){
         document.getElementById("miImagenFigura").src = 'imgs/Square.png';
->>>>>>> 241bb5eab2d77c08288e1682f8209447c543b2fb
       } else if(y == "Triangulo"){
         document.getElementById("miImagenFigura").src = 'imgs/Triangle.png';
       } else if(y == "Rectangulo"){
